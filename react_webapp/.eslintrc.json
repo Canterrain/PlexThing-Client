@@ -7,7 +7,8 @@
   "plugins": [
     "prettier",
     "react",
-    "unused-imports"
+    "unused-imports",
+    "react-hooks"
   ],
   "extends": [
     "eslint:recommended",
@@ -15,7 +16,8 @@
     "plugin:import/recommended",
     "plugin:import/electron",
     "plugin:import/typescript",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
@@ -45,7 +47,9 @@
       {
         "checkLoops": false
       }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "react": {

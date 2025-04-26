@@ -24,3 +24,6 @@ yarn-error.log*
 
 .eslintcache
 tsconfig.tsbuildinfo
+
+superbird-custom-webapp/
+
